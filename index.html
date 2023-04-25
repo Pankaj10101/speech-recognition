@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speech Recognation App</title>
+    <script src="languages.js" defer></script>
+    <script src="file.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+  <body>
+    <div class="theme-switcher">
+      <input
+        type="checkbox"
+        id="theme-switcher-checkbox"
+        class="theme-switcher-checkbox"
+      />
+      <label for="theme-switcher-checkbox" class="theme-switcher-label"></label>
+    </div>
+
+    <div class="container">
+      <div class="wrapper">
+        <h2 class="heading">Speech To Text</h2>
+        <div class="language">
+          <select name="language" id="language"></select>
+        </div>
+        <button class="startspeech btn">
+          <img class="sound bar" src="./assets/bars.svg" alt="" /><img
+            class="mic"
+            src="./assets/microphone.png"
+            alt=""
+          />
+          <p>Start Listening</p>
+        </button>
+      </div>
+      <div class="block">
+        <h2 class="result">Result :</h2>
+        <textarea name="" id="textarea" cols="50" rows="10"></textarea>
+      </div>
+      <div class="footer">
+        <button class="clear btn">
+          <img src="./assets/trash-2-32.png" alt="" />
+          <p>Clear</p>
+        </button>
+        <button class="download btn" disabled>
+          <img src="./assets/download.png" alt="" />
+          <p>Download</p>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
